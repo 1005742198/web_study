@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML表格测验</title>
+	<!-- input标签[里面是属性以及属性值，{是对所选色的要求}] -->
+	<style type="text/css">
+		input[type="tel"]
+		{background: green; }
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>学生档案</legend>
+		<form action="http://www.ascentoptics.com">
+			<label>姓名：<input type="text" name="text" placeholder="请输入学生名字" autocomplete="autocomplete"><br><br></label>
+			<label>手机号：<input type="tel" name="tel" required="required"><br><br></label>
+			<label>邮箱：<input type="email" name="email" autocomplete="autocomplete"><br><br></label>
+			<label>所属学院：<input type="text" name="text" placeholder="请输入所选择学院" list="xueyuan"></label>
+            <datalist id="xueyuan">
+            	<option>Java学院</option>
+                <option>WEB学院</option>
+                <option>PHP学院</option>
+                <option>大数据学院</option>
+                <option>新媒体运营学院</option>
+
+              </datalist><br><br>
+              <label>出生日期：<input type="date" name="date"><br><br></label>
+         
+             <label> 成绩：<input type="number" name="number" autofocus=""><br><br></label>
+			<label>毕业时间：<input type="date" name="date"><br><br></label>
+			<input type="submit" name="sunmit"><input type="reset" name="reset"><br><br>
+  
+  <!-- datalist 与selet 区别演示 区别：select没办法输入placeholser灰色字体 -->
+  <p>datalist与select区别演示</p>
+  籍贯：<select >
+  	
+  	<option>北京</option>
+  	<option>上海</option>
+  	<option>河南</option>
+  	<option>杭州</option>
+
+  </select>
+
+
+		</form>
+
+	</fieldset>
+
+	
+</body>
+</html>

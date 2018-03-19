@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清楚浮动before, after</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.top{
+			height: 100px;
+			background-color: orange;
+			border: 1px dotted grey;
+
+		}
+		.main{
+			width: 900px;
+			/*height: 200px;*/
+			background-color: skyblue;
+			border: 1px dotted grey;
+			margin: 0 auto;
+		}
+		
+		.main ul li{
+			width: 200px;
+			height: 100px;
+			float: left;
+			background-color: red;
+
+		}
+		/*.main:before, .main:after{
+			content: "";
+			display: table; 触发BFC防止外边距合并
+		}
+		.main:after{
+			clear: both;
+		}
+		.main{
+			*zoom: 1;
+		}*/   /*清楚浮动方法四如上注释部分*/
+		.footer{
+			width: 900px;
+			height: 200px;
+			background-color: pink;
+			border: 1px dotted grey;
+			margin: 0 auto;
+
+		}
+		ul{
+			list-style: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">top</div>
+	<div class="main">
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	</div>
+	<div class="footer">footer</div>
+</body>
+</html>

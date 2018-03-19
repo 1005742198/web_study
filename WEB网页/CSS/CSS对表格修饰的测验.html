@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS对表格修饰的测试</title>
+<style type="text/css">
+
+.g{font-family: Arial,serif;border-collapse: collapse;width: 80%;}
+th,td{font-size: 1em;border:1px solid red;}
+/*在style设置中border表现需要同时显示三个属性（width，style，才能显示出边框*/
+th{font-size: 1.1em;
+	text-align:left;   /*水平位置 left  right  center*/
+	padding-top: 5px;  /*文字距离顶部的像素距离*/
+	padding-bottom: 4px; /* 文字居于底部的像素距离*/
+	/*text-align: center;
+	line-height: 180%;*/
+	background-color: green
+}
+tr.m{color: #000000;background-color: #EAF2D3}
+</style>
+
+</head>
+
+<body>
+<table class="g">
+	
+	<tr><th>Company</th><th>Contact</th><th>Country</th></tr>
+	<tr><td>Apple</td>  <td>Steven Jobs</td><td>USA</td> </tr>
+	<tr class="m"><td>Baidu</td>  <td>Li YanHong</td><td>China</td> </tr>
+	<tr><td>Google</td>  <td>Larry Page</td><td>USA</td> </tr>
+	<tr class="m"><td>Lenovo</td>  <td>Liu Chuanzhi</td><td>China</td> </tr>
+	<tr><td>Microsoft</td>  <td>Bill Gates</td><td>USA</td> </tr>
+	<tr><td>Applr</td>  <td>Steven Jobs</td><td>USA</td> </tr>
+<tr class="m"><td>Nokia</td>  <td>Stephen Elop</td><td>Finland</td> </tr>
+</table>
+	
+</body>
+</html>

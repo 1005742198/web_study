@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伪元素选择器以及属性选择器</title>
+ <style>
+ 	.SHIJU p{ /*后代选择器的应用,.SHIJU 下面的P操作*/
+ 		text-indent: 1em;   /*首行缩进一个字*/
+ 		color: red;
+ 	}
+ 	/*.demo  是伪类选择器
+ 	：first-child 是就结构为类选择器   ：havor  是链接为类选择器
+ 	：：是伪元素选择器*/
+
+ 	.jieshi p::first-letter { /*::first-letter 伪元素选择器选择第一个字*/
+ 		color: green;
+ 		font-size: 50px
+ 	}
+ 	.weihang p::first-line{  /*::first-line 伪元素选择器选择第一个行*/
+ 		color: pink;
+ 		font-weight: 600px
+ 	}
+ 	 p::selection{  /*::selection 当我们选中文字时可以变换的样式*/
+ 		color: skyblue;
+ 	}
+     /*以上是伪元素选择器的用法*/
+
+    /*下面的是属性选择器（把具有同一属性的选择出来）的用法*/
+    input[type=text] { /*注意input和后面的中括号是紧挨着些的， 没有空格也没有其他符号*/
+    	color: orange;
+    }
+    div[class^=shuxing]{/* ^表示已shuxing开头的所有的样式变化*/
+    	color: red;
+    }
+    div[class$=shuxing]{ /*$代表以shuxing结尾的所有的样式变化*/
+    	color: green;
+    	font-size: 28px
+    }
+    div[class*=shuxing]{/* *代表只要class中含有shuxing的都可以被选择出来变化样式*/
+    	font-style: italic;
+    }
+
+   p{
+   	line-height: 26px;
+   	font-family: "微软雅黑"；
+   }
+
+ </style>
+
+
+</head>
+<body>
+<h2>《望天门山》</h2>
+<div class="SHIJU">
+<p>天门中断楚江开</p>
+<p>碧水东流至此回</p>
+<p>两岸青山相对出</p>
+<p>孤帆一片日边来</p></div>
+
+<div class="jieshi"><p>天门山从中间断裂是楚江把它冲开，碧水向东浩然奔流到这里折回,两岸高耸的青山隔着长江相峙而立，江面上一叶孤舟像从日边驶来。</p></div>
+<div class="weihang"><p>《望天门山》是唐代大诗人李白于开元十三年（725年）赴江东途中行至天门山时所创作的一首七绝。此诗描写了诗人舟行江中顺流而下远望天门山的情景：前两句用铺叙的方法，描写天门山的雄奇壮观和江水浩荡奔流的气势；后两句描绘出从两岸青山夹缝中望过去的远景，显示了一种动态美。全诗通过对天门山景象的描述，赞美了大自然的神奇壮丽，表达了作者初出巴蜀时乐观豪迈的感情，展示了作者自由洒脱、无拘无束的精神风貌。作品意境开阔，气象雄伟，动静虚实，相映成趣，并能化静为动，化动为静，表现出一种新鲜的意趣。 </p></div>
+
+
+账号：<input type="text" name="id" value="账号1" autofocus="autofocus"><br>
+账号：<input type="text" name="id" value="账号2"  ><br>
+账号：<input type="text" name="id"  placeholder="账号3" ><br>
+密码：<input type="password" name="password" autocomplete="off"><br>
+
+
+
+<div class="shuxing01">属性选择器</div>
+<div class="shuxing02">属性选择器</div>
+<div class="shuxing01">属性选择器</div>
+<div class="id shuxing">属性选择器</div>
+<div class="shuxing ce">属性选择器</div>
+<div class="id shuxing">属性选择器</div>
+<div class="id shuxing">属性选择器</div>
+<div class="ceyan">属性选择器</div>
+
+</body>
+</html>

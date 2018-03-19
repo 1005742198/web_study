@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>链接伪类选择器</title>
+	<style type="text/css">
+		a:link{ /*link代表未访问的链接，颜色是灰色*/
+			font-size: 20px;
+			color: grey
+		}
+		a:visited{ /*a是选择器，visited代表是已经点击访问过的链接，字体是40像素大小，颜色变成橙色,a 与visited中间用：号连接*/
+			font-size: 30px;
+			color: orange
+		}
+		a:hover{ /*hover表示的是鼠标放在链接上显示的属性， 字体40限速， 颜色红色*/
+			font-size: 30px;
+			color: red
+		}
+		a:active{
+			font-size: 30px;
+			color: green
+		}
+		/*总结link, visited, havor, active顺序不可以颠倒，通常用的最多的是havor这一个*/
+	</style>
+</head>
+<body>
+	<a href="http://www.ascentoptics.com">天猫电器城</a> <a href="http://www.baidu.com">医药馆</a>    <a href="http://www.google.com">飞猪旅行</a>
+</body>
+</html>

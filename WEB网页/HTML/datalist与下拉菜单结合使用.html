@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>datalist与下拉菜单结合使用</title>
+</head>
+<body>
+	<!--  简单介绍文档类型-->
+	<!-- header 语意：文档的头部， 也可以称为页眉 -->
+	<!-- footer 语意：文档的尾部， 也可以称为页脚 -->
+	<!-- nav 语意：定义导航链接的部分 -->
+	<!-- aside 语意：定义侧边内容 -->
+
+
+	<!-- datalist与Input搭配使用方法演示 ;注意list与id的使用-->
+	<input type="text" name="明星" list="shuaige">搜索
+    <datalist id="shuaige">
+    	<option>刘德华</option>
+    	<option>刘细菌</option>
+    	<option>刘小青</option>
+    	<option>刘美丽</option>
+    	<option>郭真真</option>
+    	<option>郭莹莹</option>
+</datalist><br><br><br><br>
+
+
+
+
+
+<!-- fieldset与legend搭配使用， 语义：将表单内的元素打包，legend在fieldset的紧接下面 -->
+<fieldset>
+	<legend>用户登陆</legend><form action="http://www.baidu.com">
+	<!-- plachehold 占位符，在没有输入任何文字的情况下以灰色显示输入文字后兄啊是， -->
+	用户账号：<input type="text" name="text" placeholder="请输入账号" autocomplete="on"><br><br>
+	<!-- autofocus自动对标， 在鼠标没有点击该表格框的情况下自动对准本表哥款 -->
+	用户密码：<input type="password" name="password" maxlength="8" autofocus="autofocus" autocomplete="off"><br><br> 
+	  <!-- 输入密码被隐藏 -->
+	用户邮箱：<input type="email" name="email" autocomplete="on"><br><br>  
+	<!-- email只能输入邮箱, autocomplete自动记录， 满足自动记录必须有两个条件：1.该表格有name属性，2.该表格框必须有提交按钮 /autocomplete="on"开启自动记录功能，autocomplete="off"关闭自动记录功能-->
+	用户手机号：<input type="tel" name="tel" required="required"><br><br> 
+	<!-- required为必选项 -->
+	网址：<input type="url" name="url"><br><br>
+	<!-- 只能输入网址 -->
+	上传文件：<input type="file" name="file" multiple="multiple">
+	<!-- multiple可以上传多个文件，选择文件时可以按住shift键同时选择多个 -->
+
+	拖动：<input type="range" name="range"><br><br>
+	用户搜索：<input type="search" name="search"><br><br>
+	日期   ：<input type="date" name="date"><br><br>
+	<!-- 显示日期 年月日 -->
+	时间    ：<input type="time" name="time"><br><br>
+	<!-- 显示时间；小时，分钟 -->
+	颜色    ：<input type="color" name="color"><br><br>
+	性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别： <input type="radio" name="性别">女<input type="radio" name="性别">男<br><br>
+	<!-- radio是单选框 -->
+	爱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好： <input type="checkbox" name="aihao" checked="checked">羽毛球<input type="checkbox" name="aihao">跑步<input type="checkbox" name="aihao">篮球<br><br>
+	<!-- checkbox是复选框 -->
+	登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;陆： <input type="submit" name="submit" value="登陆"><br><br>
+	<input type="image" src="images/微信图片_20180310113559.png"></form>
+</fieldset>
+</body>
+</html>

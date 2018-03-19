@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- saved from url=(0133)file:///C:/Users/obob/Desktop/WEB%E7%BD%91%E9%A1%B5/CSS/%E5%AD%90%E7%BB%9D%E7%88%B6%E7%9B%B8%E5%AE%9A%E4%BD%8D%E7%BB%83%E4%B9%A0.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>子绝父相定位练习</title>
+	<style>
+		div{
+			width: 527px;
+			height: 400px;
+			border: 1px solid grey;
+			padding: 18px;
+			position: relative;  /*如果不想让.tubiao图片回到网页的左底部，就要给父亲也要加一个定位，子绝父相*/
+		}
+		.tubiao{
+			width: 80px;
+			height: 50px;
+			position: absolute; /*absolute该图片为绝对位置，不占div中的位置， 是漂浮着的*/
+			bottom: 0px;  
+			left:0px;
+
+		}
+
+
+</style>
+
+
+</head>
+<body>
+	<div>
+		<img src="./子绝父相定位练习_files/timg">
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521455349982&di=17fdd7f2ac03ae455b7ff19d365e7a14&imgtype=0&src=http%3A%2F%2Fc1.neweggimages.com.cn%2FNeweggPic2%2Fupload%2F8f063223-84f1-4fcb-9322-c30002916bf5.jpg" class="tubiao">
+	</div>
+
+</body></html>

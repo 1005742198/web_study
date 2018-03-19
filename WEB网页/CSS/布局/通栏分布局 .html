@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>通栏分布局</title>
+	<style>
+		*{ /*第一不必做*/
+			margin: 0;
+			padding: 0;
+		}  
+		.top{
+			height: 80px;
+			background-color: black;
+			color: white;
+			text-align: center; /*文字水平居中方法*/
+			line-height: 80px;  /*文字垂直居中方法*/
+		}
+		.banner{
+			width: 900px;
+			height: 400px;
+			background-color: skyblue;
+			margin: 10px auto;/*让盒子水平居中的方法，使用 0 auto*/  /*上下外边距是10px*/
+
+		}
+		.main{
+			width: 900px;
+			height: 100px; /*如果不写高度会是什么情况呢*/
+			background-color: pink;
+			margin: 0 auto 10px auto;  /*上外边距是0px,左右是水平居中，下是10px外边距*/
+
+		}
+		ul{
+			list-style: none; /*然无序列表前面的符号去掉*/
+		}
+		.main ul li{
+			width: 225px;
+			height: 100px;
+			float: left;
+		}
+		li:nth-child(even){ /*结构伪类选择器 even代表的是所有的偶数盒子， odd代表的是所有的奇数盒子*/
+			background-color: hotpink;
+		}
+		.footer{
+			height: 80px;
+			background-color: black;
+			color: white;
+			text-align: center;
+			line-height: 80px;
+		}
+	</style>
+
+
+</head>
+<body> 
+	<div class="top">top</div>
+	<div class="banner">banner</div>
+	<div class="main">
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+	</div>
+	<div class="footer">footer</div>
+	
+</html>

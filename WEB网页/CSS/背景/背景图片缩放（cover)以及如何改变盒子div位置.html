@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背景图片缩放以及如何改变盒子的位置</title>
+	<style>
+	div.cover{
+		width: 500px;
+		height: 500px;
+		background-color: pink;
+		background-image: url(../images/我们的时光.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+
+	
+	}
+	div.contain{
+		width: 500px;
+		height: 600px;
+		background-color: pink;
+		background-image: url(../images/我们的时光.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		/*background-position:bottom right; 背景图在盒子里的位置*/
+		position: absolute;  /*用于改变盒子在网页中的位置，很重要，absolute绝对位置*/
+		left: 60%;   /*盒子在网页中距离左边界的位置*/
+		top: 5%;     /*盒子在网页中距离上边界的位置*/
+
+	
+	}
+</style>
+
+</head>
+<body>
+	<div class="cover"></div>
+	<br><br><br><br><br><br>
+	<div class="contain"></div>
+</body>
+</html>

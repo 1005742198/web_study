@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>淘宝轮播图案例 定位演示</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.circle{
+		list-style: none;
+	}
+		div{
+			width: 520px;
+			height: 284px;
+			margin: 50px auto;  /*auto让普通盒子水平居中*/
+			position: relative;
+
+		}
+		.arrow-r,
+		.arrow-l{
+			widows: 28px;
+			height: 40px;
+			position: absolute;
+		}
+		.arrow-r{
+			right: 0px;
+			top: 122px; /* 垂直居中*/
+		}
+		.arrow-l{
+			left: 0px;
+			top:122px
+		}
+		.circle{
+			width: 80px;
+			height: 20px;
+			background-color: rgba(255,255,255,0.3); /*白色半透明*/
+			position: absolute;
+			bottom: 16px;
+			left: 230px;
+		}
+		.circle li{
+			width: 10px;
+			height: 10px;
+			background-color:green;
+			margin-top: 6px;
+			float: left;
+			margin-left: 5px;
+			border-radius: 50%;
+
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="https://img.alicdn.com/tfs/TB1h1Q_dHSYBuNjSspiXXXNzpXa-520-280.jpg_q90_.webp">
+		<a href="#"><img src="../images/大于号图标.png" class="arrow-r"></a>
+		<a href="#"><img src="../images/小于号.png" class="arrow-l"></a>
+		<ul class="circle">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>

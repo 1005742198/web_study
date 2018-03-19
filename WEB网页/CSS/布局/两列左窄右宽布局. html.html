@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>两列左窄右宽布局</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0; /*每次必须填写的清除浏览器*/
+	}
+		.top,
+		.banner,
+		.main,
+		.buttom{
+			width: 1000px;
+			border: 1px dotted grey;
+			font-size: 26px;
+			color: rgba(0,0,0,0.5);  /*黑色半透明字体*/
+			margin: 0 auto; /*让盒子在页面中居中对齐*/
+			text-align: center;
+			margin-bottom: 8px; /*外边距8px*/
+
+		}
+		.top{
+			height: 80px
+		}
+		.banner{
+			height: 100px
+		}
+		.main{
+			height: 500px
+		}
+		.left{
+			width: 400px;
+			background-color: pink;
+			height: 500px;
+			float: left;
+		}
+		.right{
+			width: 580px;
+			background-color: hotpink;
+			height: 500px;
+			float: right;
+
+		}
+		.buttom{
+			height: 100px
+		}
+	</style>
+</head>
+<body>  <!-- .top+.banner+(.main>.left+.right)+.buttom 快速生成网页布局写法 --> 
+	<div class="top">top</div>
+	 <div class="banner">banner</div>
+	 <div class="main">
+	 	<div class="left"></div>
+	 		<div class="right"></div>
+	 	
+	 </div>
+	 <div class="buttom"> buttom</div> 
+</body>
+</html>

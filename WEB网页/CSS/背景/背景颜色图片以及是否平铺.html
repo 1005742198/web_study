@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背景颜色图片以及是否平铺</title>
+	<style>
+		div.tianqi{  /*交集选择器的使用*/
+			background-color: pink; /*设置盒子的背景颜色*/
+			width:300px;  /*设置盒子div区域的长度*/
+			height:400px;  /*设置盒子div区域的宽度*/
+			background-image: url(../images/青春修炼手册.png);/* ur1是不可以省略掉的*/
+			background-repeat: no-repeat; /* 背景图不平铺*/
+			background-repeat: repeat-x; /*背景图水平平铺*/
+			background-position: 50px center;
+		}
+
+		div.wumai{
+			width: 500px;
+			height: 500px;
+			background-color: deeppink;
+			background-image: url(../images/魔法城堡.png);
+			background-repeat: no-repeat;
+			/*background-position: top right; 背景图在盒子div区域里的显示位置， 常用的表示位置的有 top bottom left right ,备注 top 和right 之间是空格符号*/
+			background-position: 10px 40px; /*精确数值的话第一个值一定是X轴，第二个数值是Y轴， X轴的大小方向和我们之前学的一样， Y轴的想法， XY轴坐标起始与左上角*/
+			background-size: 50%; /*用来改变背景图片的大小*/
+
+
+		}
+
+	</style>
+
+
+</head>
+<body>
+
+	<div class="tianqi">
+     北京今天天气好好欸！北京今天天气好好欸！北京今天天气好好欸！北京今天天气好好欸！北京今天天气好好欸！北京今天天气好好欸！北京今天天气好好欸！
+	</div>
+
+	<div class="wumai">
+		昨天雾霾好！昨天雾霾好！昨天雾霾好！昨天雾霾好！昨天雾霾好！昨天雾霾好！
+	</div>
+	
+</body>
+</html>

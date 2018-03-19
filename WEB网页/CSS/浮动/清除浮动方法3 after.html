@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清除浮动常用方法</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.top{
+			width:900px;
+			height:80px;
+			background-color: pink;
+			margin: 0 auto;
+		}
+		.main{
+			width: 900px;
+			/*height: 100px;*/
+			background-color:hotpink;
+			margin: 0 auto;
+			/*overflow: hidden; *//*overflow会触动BFC， BFC可以清楚浮动影响，有了这个即使父集没有高度也不会有有浮动影响的不好*/
+
+		}
+		/*第三种清除浮动影响的方法，也是最常用的办法*/
+		.main:after{
+			content: ".";
+			clear: both; 
+			display:block; /*转换成块级元素*/
+			height: 0px;
+			
+		}
+		.main{
+			*zoom: 1;  /*为了兼容IE6，7版本需要加上这句话*/
+		}
+
+		ul{
+			list-style: none;
+		}
+		.main ul li{
+			width: 200px;
+			height: 100px;
+			float: left;
+			background-color: skyblue;
+		}
+		.footer{
+			width: 900px;
+			height: 130px;
+			margin: 0 auto;
+			background-color: black;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="top">top</div>
+	<div class="main">
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	</div>
+	<div class="footer">footer</div>
+</body>
+</html>

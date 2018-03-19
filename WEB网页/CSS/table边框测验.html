@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>table边框测验+结构伪类选择器</title>
+	<style>
+	table {
+		width: 400px; /*表格宽度*/
+		height: 500px;  /*表格高度*/
+		border: 1px solid green;  /*表格边框的宽度，样式，颜色*/
+		border-collapse: collapse; /*表格边框合并*/
+		
+
+	
+	}
+	tr,td{
+		border: 1px solid green; /*行，单元格的宽度，样式，颜色*/
+
+
+	}
+	 div:first-child { /*修改的内容是先找到div的父元素nav，然后父元素下的第一个孩子是要更改的对象*/
+		width: 300px;
+		height: 200px;
+		border: 1px solid red;
+		border-radius: 50px;
+		text-align: center; /*使文字水平居中在盒子里*/
+		line-height: 200px   /*使文字垂直居中在盒子里*/
+	}
+	div:last-child { /*修改的内容是先找到div的父元素，然后父元素下的第一个孩子是要更改的对象*/
+		width: 300px;
+		height: 200px;
+		border: 1px solid red;
+		padding: 18px 18px; /*上下左右都是调成了文字与边框的距离是18px*/
+	}
+	
+	</style>
+</head>
+<body>
+	<table cellpadding="0" cellspacing="0px">  <!-- 只能用在表格中，cellpadding文字与td 左边框的距离， 两个td之间的距离 -->
+		<tr>
+			<td>123</td>
+			<td>123 </td>
+			<td>123</td>
+			<td>123</td>
+			<td>123</td>
+			<td>123</td>
+		</tr>
+		<tr>
+			<td>123</td>
+			<td>123 </td>
+			<td>123</td>
+			<td>123</td>
+			<td>123</td>
+			<td>123</td>
+		</tr><tr>
+			<td>123</td>
+			<td>123 </td>
+			<td>123</td>
+			<td>123</td>
+			<td>123</td>
+			<td>123</td>
+		</tr><tr>
+			<td>123</td>
+			<td>123 </td>
+			<td>123</td>
+			<td>123</td>
+			<td>123</td>
+			<td>123</td>
+		</tr><tr>
+			<td>123</td>
+			<td>123 </td>
+			<td>123</td>
+			<td>123</td>
+			<td>123</td>
+			<td>123</td>
+		</tr>
+	</table><br>
+<hr>
+<nav>
+	<div >改变边框角的弧度</div>
+	<div >测试盒子内边距padding，内边距就是文字到内边框的距离</div>
+	<div >测试盒子内边距padding，内边距就是文字到内边框的距离</div></nav>
+
+</body>
+</html>

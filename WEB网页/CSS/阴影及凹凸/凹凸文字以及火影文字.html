@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>凹凸文字以及火影文字</title>
+	<style>
+	div{
+		font:500 80px "微软雅黑";
+		/*font-family: "微软雅黑";
+		font-weight: 700;
+		font-size: 40px;*/
+	}
+
+	div.huoying{
+		text-shadow: 3px 3px 1px rgba(0,0,0,0.3)  /*水平位置 垂直位置 模糊位置 透明度（中间是空格隔开的）火影文字的设置*/
+	}
+	div.tu{
+		width: 400px;
+		height: 200px;
+		background-color: grey;
+		color:grey;
+		text-shadow: 1px 1px 1px rgb(255,255,255), -1px -1px 1px rgb(0,0,0)
+	}
+	div.ao{
+		width: 400px;
+		height: 200px;
+		background-color: grey;
+		color:grey;
+		text-shadow: -1px -1px 1px #000, 1px 1px 1px #FFF;
+
+</style>
+</head>
+<body>
+	<div class="huoying">我是火影文字</div>
+	<div class="tu">我是凸文字</div>
+	<div class="ao">我是凹文字</div>
+	
+
+
+
+
+
+</body>
+</html>
